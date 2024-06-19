@@ -36,3 +36,15 @@ void empilhar(Stack * p, int x) {
 	}
 	p->itens[p->tp++] = x;
 }
+
+int tamanho(Stack * p) {
+	return p->tp;
+}
+
+int topo(Stack * p) {
+	if (p->tp == 0) {
+		//printf("Stack vazia");
+		return -1;
+	}
+	return p->itens[p->tp-1];
+}
