@@ -35,3 +35,4 @@ void empilhar(Stack * p, int x) {
 		return;
 	}
 	p->itens[p->tp++] = x;
+}
