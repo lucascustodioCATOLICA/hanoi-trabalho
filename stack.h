@@ -1,5 +1,3 @@
-#ifndef STACK.H
-#define STACK.H
 
 typedef struct stack Stack;
 
