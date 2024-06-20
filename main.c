@@ -50,7 +50,7 @@ int main() {
 
 
 int inicializar(Stack * pino1, int * discos){    
-    printf("\nTorre de Hanoi, desenvolvido em C por Ryan Sampaio Filho.\n");
+    printf("\nTorre de Hanoi\n");
     printf("Voce quer jogar com quantos discos?\n");
     fflush(stdin);
     scanf("%d", discos);
