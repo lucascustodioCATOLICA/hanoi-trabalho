@@ -48,3 +48,21 @@ int topo(Stack * p) {
 	}
 	return p->itens[p->tp-1];
 }
+
+void imprimir(Stack * p) {
+	int i;
+	printf("[ ");
+	for(i=0; i<p->tp; i++) {
+		printf("%d ", p->itens[i]);
+	}
+	printf("]\n");
+}
+
+void inverter3(Stack * p) {
+	int i, f, tmp;
+	for (i = 0, f = p->tp-1; i < f; i++, f--) {
+		tmp = p->itens[i];
+		p->itens[i] = p->itens[f];
+		p->itens[f] = tmp;
+	}
+}
