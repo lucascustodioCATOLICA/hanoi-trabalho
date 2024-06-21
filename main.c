@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
+#include "main.h"
 
-int inicializar(Stack * pino1, int * discos);  
-void terminar(Stack * pino1, Stack * pino2, Stack * pino3);
-int movimentar(Stack * pino1, Stack * pino2, Stack * pino3);
-int mover(Stack * origem, Stack * destino);
-void mostrarPinos(Stack * pino1, Stack * pino2, Stack * pino3);
-void mostrarPossibilidades(Stack * pino1, Stack * pino2, Stack * pino3);
+#define TAM_MAX 100
 
 int main() {
     int estado = 1;    
@@ -15,7 +11,7 @@ int main() {
     Stack * A = criar();
     Stack * B = criar();
     Stack * C = criar();
-    while(estado != 1000){
+    while(estado != TAM_MAX){
         switch(estado){
             case 1 :
                 system("cls");
@@ -39,7 +35,7 @@ int main() {
                 break;  
             case 6 :
                 terminar(A, B, C);
-                estado = 1000;
+                estado = TAM_MAX;
                 break;            
         }
         
